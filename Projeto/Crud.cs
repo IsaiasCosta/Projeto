@@ -16,7 +16,7 @@ namespace Projeto
             int codigo = Convert.ToInt16(Console.ReadLine());
 
             //Objeto Pessoa
-            Pessoa pessoa = new Pessoa();
+            Pessoa pessoa = new();
 
             //Obter dados Pessoais
             Console.WriteLine("Informe o Nome");
@@ -71,7 +71,9 @@ namespace Projeto
             for (int i = 0; i < ArmazenarDados.Pessoas.Count; i++)
             {
                 Console.WriteLine($"Nome: {ArmazenarDados.Pessoas[i].Nome}\n" +
+                                 
                                   $"Idade:{ArmazenarDados.Pessoas[i].Idade}\n" +
+                                 
                                   $"Cidade: {ArmazenarDados.Pessoas[i].Cidade}\n" +
                                   $"========================================");
             }
